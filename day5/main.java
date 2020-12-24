@@ -6,7 +6,6 @@ public class main {
         BufferedReader reader = new BufferedReader(new FileReader(args[0]));
         ArrayList<Integer> list = new ArrayList<Integer>();
 
-
         String line;
         int ans = 0;
         while((line = reader.readLine()) != null){
@@ -21,10 +20,6 @@ public class main {
 
         Collections.sort(list);
         System.out.println(missingSeat(list));
-
-
-
-
     }
 
     static int highestSeat(String seating){
@@ -51,7 +46,6 @@ public class main {
 
         return seatingChart[0] * 8 + seatingChart[2];
     }
-
 
     static int missingSeat(ArrayList<Integer> seats){
         int missing = seats.get(0);
