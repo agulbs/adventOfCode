@@ -45,9 +45,7 @@ public class main {
             long sum = 0;
             for (int j = i; j < list.size(); j++) {
                 sum += list.get(j);
-                if (sum > key) {
-                    break;
-                }
+                if (sum > key) { break; }
 
                 if (sum == key) {
                     long min = Long.MAX_VALUE;
